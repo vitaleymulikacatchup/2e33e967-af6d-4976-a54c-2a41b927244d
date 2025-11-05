@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -25,12 +25,11 @@ export default function Home() {
       cardStyle="gradient-bordered"
       primaryButtonStyle="shadow"
       secondaryButtonStyle="radial-glow"
-      showBlurBottom={true}
+      showBlurBottom="true"
     >
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal
           logoSrc="https://images.pexels.com/photos/16822611/pexels-photo-16822611.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-          logoAlt="Coffee Shop Logo"
           brandName="BrewCraft"
           button={{
             text: "Order Now",
@@ -384,17 +383,17 @@ export default function Home() {
           socialLinks={[
             {
               icon: Instagram,
-              url: "https://instagram.com/brewcraft",
+              href: "https://instagram.com/brewcraft",
               ariaLabel: "Follow us on Instagram"
             },
             {
               icon: Facebook,
-              url: "https://facebook.com/brewcraft",
+              href: "https://facebook.com/brewcraft",
               ariaLabel: "Follow us on Facebook"
             },
             {
               icon: Twitter,
-              url: "https://twitter.com/brewcraft",
+              href: "https://twitter.com/brewcraft",
               ariaLabel: "Follow us on Twitter"
             }
           ]}

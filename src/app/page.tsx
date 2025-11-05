@@ -79,7 +79,7 @@ export default function Home() {
           tagIcon={Coffee}
           buttons={[
             {
-              text: "Explore Menu",
+              text: "Order Online Now",
               href: "product"
             },
             {

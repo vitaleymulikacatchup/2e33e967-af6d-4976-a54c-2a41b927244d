@@ -25,7 +25,7 @@ export default function Home() {
       cardStyle="gradient-bordered"
       primaryButtonStyle="shadow"
       secondaryButtonStyle="radial-glow"
-      showBlurBottom="true"
+      showBlurBottom={false}
     >
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal

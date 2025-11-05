@@ -13,6 +13,39 @@ import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
 import { Award, Coffee, Facebook, Flame, Heart, HelpCircle, Instagram, Leaf, Mail, MessageSquare, Star, TrendingUp, Twitter, Users } from 'lucide-react';
 
+const assetMap = [
+  {
+    id: "coffee-logo",
+    url: "https://images.pexels.com/photos/16822611/pexels-photo-16822611.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "BrewCraft Coffee Logo"
+  },
+  {
+    id: "coffee-interior",
+    url: "https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Modern coffee shop interior"
+  },
+  {
+    id: "premium-beans",
+    url: "https://images.pexels.com/photos/33682396/pexels-photo-33682396.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Premium coffee beans"
+  },
+  {
+    id: "brewing-equipment",
+    url: "https://images.pexels.com/photos/2067431/pexels-photo-2067431.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Professional brewing equipment"
+  },
+  {
+    id: "barista-craft",
+    url: "https://images.pexels.com/photos/302897/pexels-photo-302897.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Barista crafting coffee"
+  },
+  {
+    id: "perfect-espresso",
+    url: "https://images.pexels.com/photos/1752475/pexels-photo-1752475.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    alt: "Perfect espresso shot"
+  }
+];
+
 export default function Home() {
   return (
     <ThemeProvider
@@ -155,21 +188,21 @@ export default function Home() {
           products={[
             {
               id: "espresso",
-              name: "Classic Espresso",
+              name: "Award-Winning Classic Espresso",
               price: "$3.50",
               imageSrc: "https://images.pexels.com/photos/1752475/pexels-photo-1752475.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
               imageAlt: "Classic espresso shot"
             },
             {
               id: "cappuccino",
-              name: "Artisan Cappuccino",
+              name: "Premium Artisan Cappuccino",
               price: "$4.75",
               imageSrc: "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
               imageAlt: "Cappuccino with latte art"
             },
             {
               id: "cold-brew",
-              name: "Cold Brew Special",
+              name: "Signature Cold Brew Special",
               price: "$4.25",
               imageSrc: "https://images.pexels.com/photos/7282737/pexels-photo-7282737.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
               imageAlt: "Cold brew coffee"
@@ -272,7 +305,7 @@ export default function Home() {
           faqs={[
             {
               id: "1",
-              title: "What are your opening hours?",
+              title: "What are our opening hours?",
               content: "We're open Monday through Friday from 6:30 AM to 8:00 PM, and weekends from 7:00 AM to 9:00 PM. Holiday hours may vary."
             },
             {
